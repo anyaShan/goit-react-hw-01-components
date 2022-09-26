@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   DescriptionInfo,
   UserImg,
@@ -16,4 +17,13 @@ export const Description = ({ user }) => {
       <UserLocation>{location}</UserLocation>
     </DescriptionInfo>
   );
+};
+
+Description.propTypes = {
+  user: PropTypes.shape({
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+  }),
 };

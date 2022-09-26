@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   StatsWrapper,
   StatsItem,
@@ -21,4 +22,10 @@ export const StatsList = ({ user: { stats } }) => {
       </StatsItem>
     </StatsWrapper>
   );
+};
+
+StatsList.propTypes = {
+  user: PropTypes.shape({
+    stats: PropTypes.objectOf(PropTypes.number).isRequired,
+  }),
 };
