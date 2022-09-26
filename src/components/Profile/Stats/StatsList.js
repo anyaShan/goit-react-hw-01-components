@@ -1,18 +1,24 @@
+import {
+  StatsWrapper,
+  StatsItem,
+  StatsLabel,
+  StatsQuantity,
+} from 'components/Profile/Stats/StatsList.styled';
 export const StatsList = ({ user: { stats } }) => {
   return (
-    <ul class="stats">
-      <li>
-        <span class="label">Followers</span>
-        <span class="quantity">{stats.followers}</span>
-      </li>
-      <li>
-        <span class="label">Views</span>
-        <span class="quantity">{stats.views}</span>
-      </li>
-      <li>
-        <span class="label">Likes</span>
-        <span class="quantity">{stats.likes}</span>
-      </li>
-    </ul>
+    <StatsWrapper>
+      <StatsItem>
+        <StatsLabel>Followers</StatsLabel>
+        <StatsQuantity>{stats.followers}</StatsQuantity>
+      </StatsItem>
+      <StatsItem>
+        <StatsLabel>Views</StatsLabel>
+        <StatsQuantity>{stats.views}</StatsQuantity>
+      </StatsItem>
+      <StatsItem>
+        <StatsLabel>Likes</StatsLabel>
+        <StatsQuantity>{stats.likes}</StatsQuantity>
+      </StatsItem>
+    </StatsWrapper>
   );
 };
