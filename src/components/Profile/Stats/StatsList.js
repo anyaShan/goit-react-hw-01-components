@@ -5,27 +5,30 @@ import {
   StatsLabel,
   StatsQuantity,
 } from 'components/Profile/Stats/StatsList.styled';
-export const StatsList = ({ user: { stats } }) => {
+export const StatsList = ({ stats }) => {
+  const { followers, views, likes } = stats;
   return (
     <StatsWrapper>
       <StatsItem>
         <StatsLabel>Followers</StatsLabel>
-        <StatsQuantity>{stats.followers}</StatsQuantity>
+        <StatsQuantity>{followers}</StatsQuantity>
       </StatsItem>
       <StatsItem>
         <StatsLabel>Views</StatsLabel>
-        <StatsQuantity>{stats.views}</StatsQuantity>
+        <StatsQuantity>{views}</StatsQuantity>
       </StatsItem>
       <StatsItem>
         <StatsLabel>Likes</StatsLabel>
-        <StatsQuantity>{stats.likes}</StatsQuantity>
+        <StatsQuantity>{likes}</StatsQuantity>
       </StatsItem>
     </StatsWrapper>
   );
 };
 
 StatsList.propTypes = {
-  user: PropTypes.shape({
-    stats: PropTypes.object.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
   }),
 };

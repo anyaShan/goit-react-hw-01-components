@@ -5,7 +5,7 @@ export const TransactionTable = styled.table`
 
   border-radius: 5px;
   overflow: auto;
-  background-color: rgb(243, 240, 240);
+
   box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
     rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
 `;
@@ -18,6 +18,7 @@ export const TransactionTh = styled.th`
   padding: 15px 30px;
   text-align: center;
   color: white;
+  text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
 `;

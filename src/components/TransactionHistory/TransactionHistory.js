@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+import { TransactionList } from './TransactionList/TransactionList';
 import {
   TransactionTable,
   TransactionHead,
@@ -13,20 +15,11 @@ export const TransactionHistory = ({ items }) => {
           <TransactionTh>Currency</TransactionTh>
         </tr>
       </TransactionHead>
-
-      <tbody>
-        <tr>
-          <td>{items.type}</td>
-          <td>{items.amount}</td>
-          <td>{items.currency}</td>
-        </tr>
-
-        <tr>
-          <td>{items.type}</td>
-          <td>{items.amount}</td>
-          <td>{items.currency}</td>
-        </tr>
-      </tbody>
+      <TransactionList items={items} />
     </TransactionTable>
   );
+};
+
+TransactionHistory.propTypes = {
+  items: PropTypes.array.isRequired,
 };
