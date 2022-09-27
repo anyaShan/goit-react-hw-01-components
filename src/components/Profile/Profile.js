@@ -5,7 +5,7 @@ import { ProfileCard } from 'components/Profile/Profile.styled';
 
 export const Profile = ({ user }) => {
   return (
-    <ProfileCard class="profile">
+    <ProfileCard>
       <Description user={user} />
       <StatsList stats={user.stats} />
     </ProfileCard>

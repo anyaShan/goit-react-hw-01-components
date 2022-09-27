@@ -9,7 +9,7 @@ export const StatisticsCard = styled.section`
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 `;
 
-export const Percentage = styled.h2`
+export const Title = styled.h2`
   padding: 30px;
   text-align: center;
   text-transform: uppercase;
