@@ -26,6 +26,6 @@ export const StatsList = ({ user: { stats } }) => {
 
 StatsList.propTypes = {
   user: PropTypes.shape({
-    stats: PropTypes.objectOf(PropTypes.number).isRequired,
+    stats: PropTypes.object.isRequired,
   }),
 };
