@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ProfileCard = styled.div`
   align-items: center;
-  width: 300px;
+  width: 400px;
 
   background-color: white;
   border-radius: 5px;

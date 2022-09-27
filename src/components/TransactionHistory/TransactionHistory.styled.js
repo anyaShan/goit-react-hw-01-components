@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
 export const TransactionTable = styled.table`
-  margin: 25px;
-
+  min-width: 400px;
   border-radius: 5px;
   overflow: auto;
 
-  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
-    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 `;
 
 export const TransactionHead = styled.thead`
@@ -15,7 +13,7 @@ export const TransactionHead = styled.thead`
 `;
 
 export const TransactionTh = styled.th`
-  padding: 15px 30px;
+  padding: 15px;
   text-align: center;
   color: white;
   text-transform: uppercase;

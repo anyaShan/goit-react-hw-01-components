@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const StatisticsCard = styled.section`
-  margin: 25px;
-
+  width: 400px;
   background-color: rgb(243, 240, 240);
   border-radius: 5px;
   overflow: hidden;
