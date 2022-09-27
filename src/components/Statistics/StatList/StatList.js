@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   List,
   Item,
@@ -15,4 +16,12 @@ export const StatList = ({ stats }) => {
       ))}
     </List>
   );
+};
+
+StatList.propTypes = {
+  stats: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  }),
 };

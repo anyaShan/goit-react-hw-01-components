@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { StatList } from 'components/Statistics/StatList/StatList';
 import {
   StatisticsCard,
@@ -12,4 +13,11 @@ export const Statistics = ({ title, data }) => {
       <StatList stats={data} />
     </StatisticsCard>
   );
+};
+
+Statistics.propTypes = {
+  statistics: PropTypes.shape({
+    title: PropTypes.string,
+    data: PropTypes.array.isRequired,
+  }),
 };
