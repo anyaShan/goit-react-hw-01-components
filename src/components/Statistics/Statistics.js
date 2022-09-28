@@ -5,7 +5,7 @@ import { StatisticsCard, Title } from 'components/Statistics/Statistics.styled';
 export const Statistics = ({ title, data }) => {
   return (
     <StatisticsCard>
-      {{ title } && <Title>{title}</Title>}
+      {title && <Title>{title}</Title>}
 
       <StatList stats={data} />
     </StatisticsCard>

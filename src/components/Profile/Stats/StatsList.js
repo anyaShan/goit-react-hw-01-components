@@ -5,8 +5,7 @@ import {
   StatsLabel,
   StatsQuantity,
 } from 'components/Profile/Stats/StatsList.styled';
-export const StatsList = ({ stats }) => {
-  const { followers, views, likes } = stats;
+export const StatsList = ({ followers, views, likes }) => {
   return (
     <StatsWrapper>
       <StatsItem>

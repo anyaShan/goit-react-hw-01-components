@@ -7,8 +7,7 @@ import {
   UserLocation,
 } from 'components/Profile/Description/Description.styled';
 
-export const Description = ({ user }) => {
-  const { username, tag, location, avatar } = user;
+export const Description = ({ username, tag, location, avatar }) => {
   return (
     <DescriptionInfo>
       <UserImg src={avatar} alt="User avatar" width={130} />
